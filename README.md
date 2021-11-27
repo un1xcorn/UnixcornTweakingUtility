@@ -20,6 +20,10 @@ IP Address: <ip>
 ```
 (IP Address is obtained by fetching `https://api.ipify.org`)
 
+## To implement
+- Bare drivers/services for Windows 8 and 10
+- Debloat Windows 10
+
 ## Requirements
 - Windows 7 64 bits
 - .NET Framework 4.7.2
