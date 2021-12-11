@@ -33,7 +33,7 @@ namespace UnixcornTweakingUtility
             if (!Environment.Is64BitOperatingSystem)
             {
                 if (MessageBox.Show(
-                "This program supports only 64bit systems.\nDo you want to talk with support ?",
+                "This program only supports 64bit systems.\nDo you want to talk with support ?",
                 "Operating System Error",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Error,
