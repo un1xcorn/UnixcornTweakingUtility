@@ -1,0 +1,75 @@
+Windows Registry Editor Version 5.00
+
+; Cleaned Context Menu
+; Remove PC Issues
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+; Remove Print element
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\print]
+[-HKEY_CLASSES_ROOT\batfile\shell\print]
+[-HKEY_CLASSES_ROOT\cmdfile\shell\print]
+[-HKEY_CLASSES_ROOT\docxfile\shell\print]
+[-HKEY_CLASSES_ROOT\fonfile\shell\print]
+[-HKEY_CLASSES_ROOT\htmlfile\shell\print]
+[-HKEY_CLASSES_ROOT\inffile\shell\print]
+[-HKEY_CLASSES_ROOT\inifile\shell\print]
+[-HKEY_CLASSES_ROOT\JSEFile\Shell\Print]
+[-HKEY_CLASSES_ROOT\otffile\shell\print]
+[-HKEY_CLASSES_ROOT\pfmfile\shell\print]
+[-HKEY_CLASSES_ROOT\regfile\shell\print]
+[-HKEY_CLASSES_ROOT\rtffile\shell\print]
+[-HKEY_CLASSES_ROOT\ttcfile\shell\print]
+[-HKEY_CLASSES_ROOT\ttffile\shell\print]
+[-HKEY_CLASSES_ROOT\txtfile\shell\print]
+[-HKEY_CLASSES_ROOT\VBEFile\Shell\Print]
+[-HKEY_CLASSES_ROOT\VBSFile\Shell\Print]
+[-HKEY_CLASSES_ROOT\WSFFile\Shell\Print]
+[-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Open With EncryptionMenu]
+[-HKEY_CLASSES_ROOT\*\shellex\PropertySheetHandlers\CryptoSignMenu]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AllFilesystemObjects\shellex\ContextMenuHandlers\SendTo]
+[-HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shellex\ContextMenuHandlers\Offline Files]
+[-HKEY_CLASSES_ROOT\Drive\shellex\ContextMenuHandlers\{596AB062-B4D2-4215-9F74-E9109B0A8153}\Sharing]
+[-HKEY_CLASSES_ROOT\Drive\shellex\PropertySheetHandlers\Sharing]
+; Remove Restore Previous Versions and Troubleshoot Compatibility
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]\
+"{596AB062-B4D2-4215-9F74-E9109B0A8153}"=""
+"{1d27f844-3a1f-4410-85ac-14651078412d}"=""
+; Remove Pin to Start
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\{a2a9545d-a0c2-42b4-9708-a0b2badd77c8}]
+;Remove Pin to Taskbar
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\{90AA3A4E-1CBA-4233-B8BB-535773D48449}]
+;Remove Edit
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\edit]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\text\shell\edit]
+[-HKEY_CLASSES_ROOT\docfile\shell\edit]
+[-HKEY_CLASSES_ROOT\txtfile\shell\edit]
+;Remove new > Shortcut, Bitmap Image, Contact, RTF, Compressed Folder, BriefCase
+[-HKEY_CLASSES_ROOT\.lnk\ShellNew]
+[-HKEY_CLASSES_ROOT\.bmp\ShellNew]
+[-HKEY_CLASSES_ROOT\.contact\ShellNew]
+[-HKEY_CLASSES_ROOT\.rtf\ShellNew]
+[-HKEY_CLASSES_ROOT\.zip\CompressedFolder\ShellNew]
+[-HKEY_CLASSES_ROOT\Briefcase\ShellNew]
+;Remove Favorites
+[HKEY_CLASSES_ROOT\CLSID\{323CA680-C24D-4099-B94D-446DD2D7249E}\ShellFolder]
+"Attributes"=dword:a9400100
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{323CA680-C24D-4099-B94D-446DD2D7249E}\ShellFolder]
+"Attributes"=dword:a9400100
+; Remove Librairies
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_CLASSES_ROOT\CLSID\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{2112AB0A-C86A-4ffe-A368-0DE96E47012E}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{491E922F-5643-4af4-A7EB-4E7A138D8174}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7b0db17d-9cd2-4a93-9733-46cc89022e7c}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A302545D-DEFF-464b-ABE8-61C8648D939B}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{A990AE9F-A03B-4e80-94BC-9912D7504104}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+“{031E4825-7B94-4dc3-B131-E946B44C8DD5}”=-
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\AnyCode]
+[-HKEY_CLASSES_ROOT\Directory\shell\AnyCode]
+[-HKEY_CLASSES_ROOT\Directory\shell\AddToPlaylistVLC]
+[-HKEY_CLASSES_ROOT\Directory\shell\PlayWithVLC]
+[HKEY_CLASSES_ROOT\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder]
+"Attributes"=dword:b0940064
